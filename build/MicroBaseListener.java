@@ -16,13 +16,13 @@ public class MicroBaseListener implements MicroListener {
 	 * <p/>
 	 * The default implementation does nothing.
 	 */
-	@Override public void enterKeyword(@NotNull MicroParser.KeywordContext ctx) { }
+	@Override public void enterR(@NotNull MicroParser.RContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 * <p/>
 	 * The default implementation does nothing.
 	 */
-	@Override public void exitKeyword(@NotNull MicroParser.KeywordContext ctx) { }
+	@Override public void exitR(@NotNull MicroParser.RContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

@@ -1,6 +1,6 @@
 grammar Micro;
 
-keyword :
+r :
 	'PROGRAM' | 'BEGIN' | 'END' | 'FUNCTION' | 'READ' | 'WRITE' | 'IF' |
 	'ELSE' | 'ENDIF' | 'WHILE' | 'ENDWHILE' | 'CONTINUE' | 'BREAK' |
 	'RETURN' | 'INT' | 'VOID' | 'STRING' | 'FLOAT' ;
@@ -21,8 +21,8 @@ STRINGLITERAL :
 COMMENT :
 	'--' ~('\n')* ;
 
-IDENTIFIERS :
-	[A-za-z]([A-za-z] | [0-9])+ ;
+ID :
+	[A-za-z]([A-za-z] | [0-9])+ | [A-za-z] ;
 
 WS :
 	[ \t\r\n]+ -> skip ;

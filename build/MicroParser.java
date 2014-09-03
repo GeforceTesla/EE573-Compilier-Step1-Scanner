@@ -17,17 +17,17 @@ public class MicroParser extends Parser {
 		T__17=1, T__16=2, T__15=3, T__14=4, T__13=5, T__12=6, T__11=7, T__10=8, 
 		T__9=9, T__8=10, T__7=11, T__6=12, T__5=13, T__4=14, T__3=15, T__2=16, 
 		T__1=17, T__0=18, OPERATOR=19, INTLITERAL=20, FLOATLITERAL=21, STRINGLITERAL=22, 
-		COMMENT=23, IDENTIFIERS=24, WS=25;
+		COMMENT=23, ID=24, WS=25;
 	public static final String[] tokenNames = {
 		"<INVALID>", "'WRITE'", "'PROGRAM'", "'WHILE'", "'READ'", "'END'", "'FUNCTION'", 
 		"'CONTINUE'", "'ELSE'", "'ENDIF'", "'VOID'", "'BREAK'", "'FLOAT'", "'STRING'", 
 		"'IF'", "'RETURN'", "'BEGIN'", "'INT'", "'ENDWHILE'", "OPERATOR", "INTLITERAL", 
-		"FLOATLITERAL", "STRINGLITERAL", "COMMENT", "IDENTIFIERS", "WS"
+		"FLOATLITERAL", "STRINGLITERAL", "COMMENT", "ID", "WS"
 	};
 	public static final int
-		RULE_keyword = 0;
+		RULE_r = 0;
 	public static final String[] ruleNames = {
-		"keyword"
+		"r"
 	};
 
 	@Override
@@ -46,24 +46,24 @@ public class MicroParser extends Parser {
 		super(input);
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
-	public static class KeywordContext extends ParserRuleContext {
-		public KeywordContext(ParserRuleContext parent, int invokingState) {
+	public static class RContext extends ParserRuleContext {
+		public RContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
-		@Override public int getRuleIndex() { return RULE_keyword; }
+		@Override public int getRuleIndex() { return RULE_r; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof MicroListener ) ((MicroListener)listener).enterKeyword(this);
+			if ( listener instanceof MicroListener ) ((MicroListener)listener).enterR(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof MicroListener ) ((MicroListener)listener).exitKeyword(this);
+			if ( listener instanceof MicroListener ) ((MicroListener)listener).exitR(this);
 		}
 	}
 
-	public final KeywordContext keyword() throws RecognitionException {
-		KeywordContext _localctx = new KeywordContext(_ctx, getState());
-		enterRule(_localctx, 0, RULE_keyword);
+	public final RContext r() throws RecognitionException {
+		RContext _localctx = new RContext(_ctx, getState());
+		enterRule(_localctx, 0, RULE_r);
 		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);

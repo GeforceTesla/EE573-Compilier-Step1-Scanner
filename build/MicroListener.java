@@ -8,13 +8,13 @@ import org.antlr.v4.runtime.tree.ParseTreeListener;
  */
 public interface MicroListener extends ParseTreeListener {
 	/**
-	 * Enter a parse tree produced by {@link MicroParser#keyword}.
+	 * Enter a parse tree produced by {@link MicroParser#r}.
 	 * @param ctx the parse tree
 	 */
-	void enterKeyword(@NotNull MicroParser.KeywordContext ctx);
+	void enterR(@NotNull MicroParser.RContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link MicroParser#keyword}.
+	 * Exit a parse tree produced by {@link MicroParser#r}.
 	 * @param ctx the parse tree
 	 */
-	void exitKeyword(@NotNull MicroParser.KeywordContext ctx);
+	void exitR(@NotNull MicroParser.RContext ctx);
 }

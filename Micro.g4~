@@ -22,4 +22,7 @@ COMMENT :
 	'--' ~('\n')* ;
 
 IDENTIFIERS :
-	[A-za-z]([A-za-z] | [0-9])+ ;
+	[A-za-z]([A-za-z] | [0-9])+ | [A-za-z] ;
+
+WS :
+	[ \t\r\n]+ -> skip ;
