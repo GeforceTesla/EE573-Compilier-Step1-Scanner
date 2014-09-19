@@ -37,9 +37,9 @@ public class Micro {
 	 
 		}
 		
-		/*@Override
+		@Override
 		public void reportError(Parser recognizer, RecognitionException e){
 			
-		}*/
+		}
 	}
 }

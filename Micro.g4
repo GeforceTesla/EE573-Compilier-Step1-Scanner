@@ -18,14 +18,11 @@ FLOATLITERAL :
 STRINGLITERAL :
 	'"' ~('"')*'"' ;
 
-COMMENT :
-	'--' ~('\n')* ;
-
 ID :
 	[A-za-z]([A-za-z] | [0-9])+ | [A-za-z] ;
 
 WS :
-	[ \t\r\n]+ -> skip ;
+	([ \t\r\n]+ | '--' ~('\n')*) -> skip ;
 
 /* Program */
 program :
@@ -35,7 +32,7 @@ id :
 pgm_body :
 	decl func_declarations ;
 decl :
-	(string_decl decl | var_decl decl) | (string_decl decl | var_decl decl) COMMENT |  ;
+	string_decl decl | var_decl decl |  ;
 
 /* Global String Declaration */
 string_decl :

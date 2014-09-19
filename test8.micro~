@@ -1,31 +1,31 @@
-PROGRAM sqrt
-BEGIN
+PROGRAM sqrt --This is dummy to satisfy the grammar
+BEGIN --This is dummy to satisfy the grammar
 
-	STRING dummy := "abcde";
+	STRING dummy := "abcde";  --This is dummy to satisfy the grammar
 
-	FLOAT n;
-	FLOAT x1,x2;
-	FLOAT fx, dfx;   --This is dummy to satisfy the grammar
-	FLOAT error;
-	INT i;
+	FLOAT n; --This is dummy to satisfy the grammar
+	FLOAT x1,x2; --This is dummy to satis --This is dummy to satisfy the grammarfy the grammar
+	FLOAT fx, dfx; --This is dummy to satisfy the grammar
+	FLOAT error; --This is dummy to satisfy the grammar
+	INT i; --This is dummy to satisfy the grammar
 
-	--PROTO VOID main();
+	--PROTO VOID main(); --This is dummy to satisfy the grammar
 
-	FUNCTION VOID main()
-	BEGIN
-		error := 0.001;
-		READ (x1);
-		fx := x1*x1 - n;
-		dfx := 2.0*x1;
-		x2 := x1 - fx/dfx;
-
-	WHILE (x1-x2 >= error)
-		x1 := x2;
-		fx := x1*x1 - n;
-		dfx := 2.0*x1;
-		x2 := x1 - fx/dfx;
-	ENDWHILE
-
-		WRITE (x2);
-	END
+	FUNCTION VOID main() --This is dummy to satisfy the grammar
+	BEGIN --This is dummy to satisfy the grammar
+		error := 0.001; --This is dummy to satisfy the grammar
+		READ (x1); --This is dummy to satisfy the grammar
+		fx := x1*x1 - n;   --This is dummy to satisfy the grammar
+		dfx := 2.0*x1; --This is dummy to satisfy the grammar
+		x2 := x1 - fx/dfx; --This is dummy to satisfy the grammar
+ --This is dummy to satisfy the grammar
+	WHILE (x1-x2 >= error) --This is dummy to satisfy the grammar
+		x1 := x2; --This is dummy to satisfy the grammar
+		fx := x1*x1 - n; --This is dummy to satisfy the grammar
+		dfx := 2.0*x1; --This is dummy to satisfy the grammar
+		x2 := x1 - fx/dfx; --This is dummy to satisfy the grammar
+	ENDWHILE --This is dummy to satisfy the grammar
+ --This is dummy to satisfy the grammar
+		WRITE (x2); --This is dummy to satisfy the grammar
+	END --This is dummy to satisfy the grammar
 END
